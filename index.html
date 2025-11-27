@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-box active" id="login-form">
+        <form action="auth.php" method="post">
+            <h2>Login</h2>
+
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <button type="submit" name="login">Login</button>
+
+            <p>Don't have an account?
+                <a href="#" onclick="showForm('register-form')">Register</a>
+            </p>
+        </form>
+    </div>
+
+    <div class="form-box" id="register-form">
+        <form action="auth.php" method="post">
+            <h2>Register</h2>
+
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="tel" pattern="[0-9]{10}" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="date" name="dob" required>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="others"> Others
+            <br><br>
+
+            <button type="submit" name="register">Register</button>
+
+            <p>Already have an account?
+                <a href="#" onclick="showForm('login-form')">Login</a>
+            </p>
+        </form>
+    </div>
+
+</div>
+
+<script>
+function showForm(formId) {
+    document.querySelectorAll(".form-box").forEach(form => form.classList.remove("active"));
+    document.getElementById(formId).classList.add("active");
+}
+</script>
+
+</body>
+</html>
