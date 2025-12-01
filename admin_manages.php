@@ -55,9 +55,7 @@ $bookings = $conn->query("SELECT b.*, v.vehicle_name, v.price_per_day
     </div>
 
     <div class="main">
-
         <h2>Booking Requests</h2>
-
         <table>
             <tr>
                 <th>Booking ID</th>
@@ -99,10 +97,7 @@ $bookings = $conn->query("SELECT b.*, v.vehicle_name, v.price_per_day
             <?php endwhile; ?>
 
         </table>
-
     </div>
-
 </div>
-
 </body>
 </html>

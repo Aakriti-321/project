@@ -66,8 +66,6 @@ $result = $conn->query($query);
                 <p><?= $pending_bookings ?></p>
             </div>
         </div>
-
-        <!-- Recent Users Table -->
         <div class="text">
             <h2>Recent Users</h2>
             <table width="100%" cellpadding="10">
@@ -99,6 +97,5 @@ $result = $conn->query($query);
         </div>
     </div>
 </div>
-
 </body>
 </html>

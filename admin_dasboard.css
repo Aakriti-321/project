@@ -5,13 +5,9 @@
   box-sizing: border-box;
 
 }
-
-
 body {
   background-color: #f5f6fa;
 }
-
-
 header {
   width: 100%;
   background: linear-gradient(90deg, #1e90ff, #3692b0);
@@ -90,14 +86,11 @@ header img {
   font-size: 20px;
 }
 
-/* Main */
 .main {
   margin-left: 220px;
   padding: 20px;
   flex: 1;
 }
-
-/* Cards */
 .cards {
   display: flex;
   gap: 20px;
@@ -127,8 +120,6 @@ header img {
   font-weight: bold;
   color: #1e90ff;
 }
-
-/* Card Icons */
 .card::after {
   content: '';
   position: absolute;
@@ -140,19 +131,19 @@ header img {
 }
 
 .card:nth-child(1)::after {
-  content: '\e7fd'; /* person icon */
+  content: '\e7fd'; 
 }
 .card:nth-child(2)::after {
-  content: '\e531'; /* directions_car icon */
+  content: '\e531'; 
 }
 .card:nth-child(3)::after {
-  content: '\e8b5'; /* clipboard_list icon */
+  content: '\e8b5'; 
 }
 .card:nth-child(4)::after {
-  content: '\e92b'; /* alarm icon */
+  content: '\e92b'; 
 }
 
-/* Recent Users Table */
+
 .text h2 {
   font-size: 22px;
   color: #1d2d50;

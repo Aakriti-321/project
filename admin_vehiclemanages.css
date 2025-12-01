@@ -1,16 +1,14 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   background-color: #f5f6fa;
 }
 
-/* Header */
 header {
   width: 100%;
   background: linear-gradient(90deg, #1e90ff, #3692b0);
@@ -35,13 +33,11 @@ header img {
   object-fit: cover;
 }
 
-/* Layout */
 .flex {
   display: flex;
   margin-top: 70px;
 }
 
-/* Sidebar */
 .sidebar {
   width: 220px;
   background-color: #1d2d50;
@@ -91,8 +87,6 @@ header img {
   margin-right: 10px;
   font-size: 20px;
 }
-
-/* Main content */
 .main {
   margin-left: 220px;
   padding: 20px;
@@ -104,8 +98,6 @@ h2 {
   margin-bottom: 20px;
   color: #1d2d50;
 }
-
-/* Forms */
 form input[type="text"],
 form input[type="number"],
 form input[type="file"] {
@@ -129,8 +121,6 @@ form button {
 form button:hover {
   background-color: #3692b0;
 }
-
-/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -159,8 +149,6 @@ table tbody tr:nth-child(even) {
 table tbody tr:hover {
   background: #e0e4ff;
 }
-
-/* Buttons */
 .button {
   padding: 6px 12px;
   background-color: #1e90ff;
@@ -184,8 +172,6 @@ table tbody tr:hover {
 .button-red:hover {
   background-color: #e03e3e;
 }
-
-/* Image in table */
 table img {
   border-radius: 5px;
   object-fit: cover;

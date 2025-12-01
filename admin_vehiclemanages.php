@@ -10,7 +10,7 @@ if($conn->connect_error) die("Connection Failed");
 
 $admin_email = $_SESSION['admin'];
 
-// Handle Add Vehicle
+
 if(isset($_POST['add_vehicle'])) {
     $name = $_POST['vehicle_name'];
     $category = $_POST['category_type'];
@@ -18,7 +18,7 @@ if(isset($_POST['add_vehicle'])) {
     $price = $_POST['price_per_day'];
     $status = 'Available';
 
-    // Handle image upload
+   
     $img_name = $_FILES['image']['name'];
     $img_tmp = $_FILES['image']['tmp_name'];
     move_uploaded_file($img_tmp, "uploads/".$img_name);
@@ -27,13 +27,11 @@ if(isset($_POST['add_vehicle'])) {
                   VALUES ('$name','$category','$model','$price','$img_name','$status')");
 }
 
-// Handle Delete
 if(isset($_GET['delete'])) {
     $id = $_GET['delete'];
     $conn->query("DELETE FROM vehicles WHERE vehicle_id=$id");
 }
 
-// Handle Update
 if(isset($_POST['update_vehicle'])) {
     $id = $_POST['vehicle_id'];
     $name = $_POST['vehicle_name'];
@@ -51,10 +49,8 @@ if(isset($_POST['update_vehicle'])) {
     }
 }
 
-// Fetch vehicles
 $vehicles = $conn->query("SELECT * FROM vehicles ORDER BY vehicle_id DESC");
 
-// Fetch vehicle for update
 $edit_vehicle = null;
 if(isset($_GET['edit'])) {
     $id = $_GET['edit'];
@@ -75,7 +71,7 @@ if(isset($_GET['edit'])) {
 
 <header>
     <img src="logo1.jpg" alt="Logo">
-    <h4>Easy Ride Admin</h4>
+    <h4>Easy Ride</h4>
 </header>
 
 <div class="flex">
